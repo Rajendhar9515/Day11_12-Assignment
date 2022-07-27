@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Stock {
 	static Scanner input = new Scanner(System.in);
-	// creating array list
 	static ArrayList<StockPortfolio> stocks = new ArrayList<StockPortfolio>(); // creating array list
 
 	// getter and setter methods for arraylist
@@ -19,7 +18,7 @@ public class Stock {
 
 	// method to add stocks in arraylist
 	public void enterNumOfStocks() {
-		System.out.println("Enter how many stock you want :- ");
+		System.out.println("Enter how many stocks you want :- ");
 		int userChoice = input.nextInt();
 
 		for (int i = 0; i < userChoice; i++) {
@@ -45,7 +44,7 @@ public class Stock {
 		System.out.println("Stock is added successfully in your portfolio.\n");
 	}
 
-	// display method to display stocks
+	// display method to display all stock
 	public void displayStocks() {
 		for (StockPortfolio stock : stocks) {
 			System.out.println(stock.toString());
@@ -60,16 +59,5 @@ public class Stock {
 			total_value_of_stocks += stockPortfolio.getVal_of_stock();
 		}
 		System.out.println("Total value of stocks :- " + total_value_of_stocks);
-	}
-
-	// main method
-	public static void main(String[] args) {
-		System.out.println("\t WELCOME TO STOCK ACCOUNT MANAGEMENT \n");
-
-
-		// creating object for Account class to test debit and credit methods.
-		Account AccountTest = new Account();
-		AccountTest.credit();
-		AccountTest.debit();
 	}
 }
