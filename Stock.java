@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Stock {
 	static Scanner input = new Scanner(System.in);
+	// creating array list
 	static ArrayList<StockPortfolio> stocks = new ArrayList<StockPortfolio>(); // creating array list
 
 	// getter and setter methods for arraylist
@@ -65,9 +66,10 @@ public class Stock {
 	public static void main(String[] args) {
 		System.out.println("\t WELCOME TO STOCK ACCOUNT MANAGEMENT \n");
 
-		Stock object = new Stock();
-		object.enterNumOfStocks();
-		object.displayStocks();
-	}
 
+		// creating object for Account class to test debit and credit methods.
+		Account AccountTest = new Account();
+		AccountTest.credit();
+		AccountTest.debit();
+	}
 }

@@ -8,7 +8,7 @@ public class StockPortfolio {
 
 		int val_of_stock;
 
-		// constructor
+		// parameterized constructor
 		public StockPortfolio(String stock_name, int num_of_shares, int share_price, int val_of_stock) {
 			this.stock_name = stock_name;
 			this.num_of_shares = num_of_shares;
